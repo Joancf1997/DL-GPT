@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+gpt2
+*.pdf
+*.txt
+gpt_download.py
+
 # Distribution / packaging
 .Python
 build/
