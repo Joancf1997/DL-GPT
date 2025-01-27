@@ -493,7 +493,7 @@ def plot_values(epochs_seen, examples_seen, trainin_values, val_values, label="l
 	fig, ax1 = plt.subplots(figsize=(5, 3))
 	
 	# Plot training and validation loss against epochs
-	ax1.plot(epochs_seen, train_values, label=f"Training {label}")
+	ax1.plot(epochs_seen, trainin_values, label=f"Training {label}")
 	ax1.plot(epochs_seen, val_values, linestyle="-.", label=f"Validation {label}")
 	ax1.set_xlabel("Epochs")
 	ax1.set_ylabel(label.capitalize())
@@ -501,7 +501,7 @@ def plot_values(epochs_seen, examples_seen, trainin_values, val_values, label="l
 
 	# Create a second x-axis for examples seen
 	ax2 = ax1.twiny()  # Create a second x-axis that shares the same y-axis
-	ax2.plot(examples_seen, train_values, alpha=0)  # Invisible plot for aligning ticks
+	ax2.plot(examples_seen, trainin_values, alpha=0)  # Invisible plot for aligning ticks
 	ax2.set_xlabel("Examples seen")
 
 	fig.tight_layout()  # Adjust layout to make room

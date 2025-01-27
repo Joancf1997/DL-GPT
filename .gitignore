@@ -10,6 +10,10 @@ gpt2
 *.pdf
 *.txt
 gpt_download.py
+*.csv
+*.zip
+sms_spam_collection
+classifier.pth
 
 # Distribution / packaging
 .Python
